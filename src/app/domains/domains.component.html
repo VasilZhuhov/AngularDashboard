@@ -1,0 +1,23 @@
+<div class="col-lg-4">
+  <div class="panel panel-default mt-4" style="height: 275px;">
+    <div class="panel-heading flexing bg-fill">
+      <h4 class="mb-0">Domains</h4>
+      <button size="small" no-icon>Goto KYC</button>
+    </div>
+    <div class="panel-body mt-2 domains">
+      <paragraph class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi porro
+        eaque molestiae accusamus fugiat modi!</paragraph>
+      <div class="row ml-1 mt-4 mb-3">
+        <div *ngFor="let domain of domains; let i = index">
+          <div *ngIf="i == 0" class="col-lg-6 pr-1 border-right">
+            <p class="h1" id="blueNumber">{{domain['value']}}</p>
+            <paragraph class="infoText">{{domain['text']}}</paragraph>
+          </div>
+          <div *ngIf="i == 1" class="col-lg-6 pr-1">
+            <p class="h1" id="orangeNumber">{{domain['value']}}</p>
+            <paragraph class="infoText">{{domain['text']}}</paragraph>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,38 @@
+.row .bg-fill{
+    margin-top: 1px;
+    background-color: #c4cfdf;
+}
+
+.border-custom{
+    border: 1.5px solid #4878c2;
+}
+
+
+.border-custom-not{
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.border-right-custom{
+    border-right: 1.4px solid #c4cfdf;
+}
+
+.fa-exclamation-triangle{
+    color: #ff4f4f;
+  }
+  
+  .fa-exclamation-circle{
+      color: #ff9900;
+  }
+  
+  .fa-info-circle{
+      color:rgb(57, 175, 214);
+  }
+
+  .rounded{
+    border-radius: 7px;
+  }

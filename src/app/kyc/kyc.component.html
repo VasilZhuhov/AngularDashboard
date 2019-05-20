@@ -1,0 +1,28 @@
+<div class="col-lg-4">
+    <div class="panel panel-default" style="height: 275px;">
+        <div class="panel-heading flexing bg-fill">
+            <h4 class="mb-0">KYC</h4>
+            <button size="small" no-icon>Goto KYC</button>
+        </div>
+        <div class="panel-body mt-2 KYC">
+            <paragraph class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                porro eaque molestiae accusamus fugiat modi!</paragraph>
+            <div class="row ml-1 mt-4 mb-3">
+                <div *ngFor="let infoBlock of kycInfo; let i = index">
+                    <div class="col-lg-4 pr-1" *ngIf="i == 0">
+                        <p class="h1" id="blueNumber">{{infoBlock["value"]}}</p>
+                        <paragraph class="infoText">{{infoBlock["text"]}}</paragraph>
+                    </div>
+                    <div class="col-lg-4 border-left border-right pr-1" *ngIf="i == 1">
+                        <p class="h1" id="greenNumber">{{infoBlock["value"]}}</p>
+                        <paragraph class="infoText">{{infoBlock["text"]}}</paragraph>
+                    </div>
+                    <div class="col-lg-4 pr-1" *ngIf="i == 2">
+                        <p class="h1" id="orangeNumber">{{infoBlock["value"]}}</p>
+                        <paragraph class="infoText">{{infoBlock["text"]}}</paragraph>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+#blueNumber{
+    color: #229ccb;
+}
+
+#greenNumber{
+    color: #28ab57;
+}
+
+#orangeNumber{
+    color: #ff7800;
+}
+
+.border-left{
+    border-left: 1px #229ccb solid;
+}
+
+.border-right{
+    border-right: 1px #229ccb solid;
+}

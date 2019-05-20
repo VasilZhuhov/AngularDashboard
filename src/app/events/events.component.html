@@ -1,0 +1,20 @@
+<div class="col-lg-4">
+    <div class="panel panel-default" style="height: 275px;">
+        <div class="panel-heading flexing bg-fill">
+            <h4 class="mb-0">Events</h4>
+            <button size="small" no-icon>Goto KYC</button>
+        </div>
+        <div class="panel-body mt-2 events">
+            <paragraph class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi porro
+                eaque molestiae accusamus fugiat modi!</paragraph>
+            <div class="mt-3 mb-3">
+                <div *ngFor="let event of eventsInfo" class="row border-bottom border-top" >
+                    <paragraph class="col-lg-2 mt-1 mb-1">{{event["date"]}}</paragraph>
+                    <paragraph class="col-lg-5 mt-1 mb-1">{{event["newRegisterDomain"]}}</paragraph>
+                    <paragraph class="col-lg-2 mt-1 mb-1"></paragraph>
+                    <paragraph class="col-lg-3 text-left mt-1 mb-1">{{event["companyName"]}}</paragraph>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
